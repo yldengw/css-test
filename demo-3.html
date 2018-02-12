@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>水平垂直居中-3</title>
+    <style>
+        .module{
+            width:300px;
+            height: 300px;
+            border: 1px solid black;
+            vertical-align: middle;
+            text-align:center;
+            display: table-cell;
+        }
+        img{
+           width:200px;
+           height: 200px;
+        }
+        html,body{height: 100%;margin:0;padding:0;}
+        /*** .table和.cell都将撑满页面，cell的子元素水平垂直居中 ***/
+        .table{
+            display: table;
+            width: 50%;
+            height: 50%;
+            margin: 0 auto;
+        }
+        .cell {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            border: 1px solid #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="module">
+       <img src="./images/cat.png"> 
+    </div>
+    <div class="table">
+            <div class="cell">
+                <p>我爱你</p>
+                <p>亲爱的中国</p>
+                <div style="width:100px;height:50px;border:1px solid #ccc;display:inline-block">div(inline-block)</div>
+                <p><img src="./images/cat.png"> </p>
+            </div>
+    </div>
+
+</body>
+</html
